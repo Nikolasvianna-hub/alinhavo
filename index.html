@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Alinhavo — Gestão simples para confecções</title>
+  <meta name="description" content="Protótipo navegável do Alinhavo: produção, oficinas, almoxarifado, vendas e financeiro de confecções em um só lugar.">
+  <meta name="theme-color" content="#2b3a67">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#/inicio" data-logo>
+        <span data-icon="logo"></span>
+        <div><b>Alinhavo</b><span>Gestão de confecções</span></div>
+      </a>
+      <nav class="nav" id="nav"></nav>
+      <div class="foot">
+        Protótipo · dados fictícios<br>
+        <button type="button" id="resetBtn">Restaurar dados de exemplo</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <a class="brand" href="#/inicio">
+          <span data-icon="logo"></span>
+          <div><b>Alinhavo</b></div>
+        </a>
+      </header>
+      <main class="content" id="view"></main>
+    </div>
+
+    <nav class="bottomnav" id="bottomnav"></nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
